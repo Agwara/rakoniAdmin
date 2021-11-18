@@ -1,0 +1,68 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #505050;
+}
+
+.input {
+  border: 0.5px solid #787878;
+  border-radius: 6px;
+  outline: none;
+  height: 45px;
+  padding: 0px 20px;
+
+  font-size: 16px;
+  font-weight: normal;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.showPassword {
+  position: absolute;
+  top: 32px;
+  right: 25px;
+  transform: translateY(50%);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #505050;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    height: 90%;
+  }
+  .input {
+    height: 40px;
+  }
+
+  .showPassword {
+    top: 28px;
+  }
+}

@@ -1,0 +1,99 @@
+.container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 20px;
+
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+.containerTwo {
+  display: flex;
+  align-items: center;
+}
+
+.currentPath {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+
+  color: #505050;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bar {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.containerThree {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.containerThreeText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+
+  color: #2d0353;
+}
+
+.containerFour {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  cursor: pointer;
+}
+
+.notificationContainer {
+  position: relative;
+}
+
+.notification {
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+
+  background-color: #bc0909;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification p {
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.containerLogoutText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+
+  color: #505050;
+}
+
+@media screen and (max-width: 500px) {
+  .displayNone {
+    display: none;
+  }
+
+  .currentPath {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

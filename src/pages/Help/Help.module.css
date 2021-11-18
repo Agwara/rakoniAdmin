@@ -1,0 +1,107 @@
+.container {
+  height: 100%;
+  width: 100%;
+
+  padding: 20px;
+}
+
+.helpDesk {
+  width: 100%;
+  min-height: 140px;
+
+  background: #fafafa;
+  border-radius: 6px;
+  padding: 10px 40px;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.helpGroupIcon {
+  height: 120px;
+  width: 120px;
+}
+
+.helpDesk h3 {
+  /* font-family: Product Sans Black; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 97%;
+  color: #2d0353;
+  margin-left: 20px;
+}
+
+.instructions {
+  min-height: 300px;
+  margin-bottom: 40px;
+}
+
+.header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 97%;
+
+  color: #2d0353;
+  margin-bottom: 20px;
+}
+
+.instructionsList {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 15px;
+  position: relative;
+}
+
+.instructionsList li {
+  margin-left: 40px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.instructionsList li::before {
+  content: url("/src/assets/help/mark.svg");
+  position: absolute;
+  left: 0px;
+}
+
+.steps {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  color: #219653;
+  text-transform: uppercase;
+}
+
+.instructionText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+  .helpDesk {
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 20px;
+  }
+
+  .helpDesk h3 {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+}

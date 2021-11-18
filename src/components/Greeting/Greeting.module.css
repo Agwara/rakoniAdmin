@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  min-height: 120px;
+
+  background-image: url("/src/assets/dashboard/welcome.png");
+  background-repeat: round;
+
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  align-items: center;
+
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.welcome,
+.quotes {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.welcome {
+  position: relative;
+}
+
+.welcome::after {
+  content: url("/src/assets/dashboard/rocket.png");
+  position: absolute;
+  margin-left: 6px;
+}
+
+.student {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+
+  color: #ffffff;
+  width: max-content;
+}
+
+.author {
+  color: #df8a09;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .containerTwo,
+  .containerThree {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  .student {
+    font-size: 25px;
+  }
+}

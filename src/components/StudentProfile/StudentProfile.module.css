@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  column-gap: 10px;
+}
+
+.pictureContainer {
+  width: 200px;
+  background-color: #fafafa;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.containerTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+
+  align-items: center;
+}
+
+.containerThree {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.studentImage {
+  width: 130px;
+  height: 130px;
+}
+
+.variable {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+
+  color: #2d0353;
+  text-align: center;
+}
+
+.variableValue {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #2d0353;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.editBtn {
+  background: #ffffff;
+
+  border: 0.5px solid #df8a09;
+  color: #df8a09;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.mainDetails {
+  flex-grow: 1;
+  background-color: #fafafa;
+  border-radius: 8px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailText {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  color: #b4b1b1;
+}
+
+.titleValue {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #505050;
+}
+
+@media screen and (max-width: 600px) {
+  .variable {
+    font-size: 16px;
+  }
+
+  .variableValue {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .pictureContainer {
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 10px;
+    padding: 10px;
+  }
+
+  .containerTwo {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .editBtn {
+    padding: 5px 10px;
+  }
+}

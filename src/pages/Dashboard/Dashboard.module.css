@@ -1,0 +1,10 @@
+.container {
+  height: 100%;
+  width: 100%;
+
+  padding: 20px;
+}
+
+.container div {
+  margin-bottom: 20px;
+}

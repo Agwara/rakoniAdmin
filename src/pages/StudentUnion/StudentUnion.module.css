@@ -1,0 +1,147 @@
+.container {
+  height: 100%;
+  width: 100%;
+
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  height: 250px;
+
+  background-image: url("/src/assets/otherIcons/studentUnion_4_1500x250.png");
+  background-position: left;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.textContainer {
+  margin-right: 80px;
+  padding-left: 20px;
+  height: 160px;
+  border-left: 2px #df8a09 solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textContainer p {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+
+  color: #ffffff;
+}
+
+.mission,
+.vision {
+  width: 100%;
+  height: min-content;
+
+  margin-top: 50px;
+}
+
+.mission h3,
+.vision h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 97%;
+
+  color: #2d0353;
+  margin-bottom: 10px;
+}
+
+.mission p,
+.vision p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  text-align: justify;
+  color: #787878;
+}
+
+.executives {
+  width: 100%;
+
+  margin-top: 50px;
+}
+
+.moreInfo {
+  width: 100%;
+  height: min-content;
+  padding: 10px 0px;
+
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.moreInfoHeader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 97%;
+
+  color: #2d0353;
+}
+
+.phone,
+.email {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #787878;
+}
+
+@media screen and (max-width: 1300px) {
+  .textContainer {
+    height: 130px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .textContainer p {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 200px;
+    background-image: url("/src/assets/otherIcons/studentUnion_2_900x200.png");
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background-image: url("/src/assets/otherIcons/studentUnion_3_600x200.png");
+  }
+
+  .textContainer {
+    margin-right: 0px;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    justify-content: flex-start;
+  }
+}
