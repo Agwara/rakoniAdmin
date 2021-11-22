@@ -2,6 +2,8 @@ import React, {useState} from "react"
 
 import textFieldStyles from "./TextField.module.css"
 
+// The props for this component are "type", "value", "setValue", "label"
+
 const TextField = (props) => {
   const [inputType, setInput] = useState(props.type)
   const validateInput = () => {

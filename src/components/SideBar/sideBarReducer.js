@@ -1,57 +1,42 @@
 export default function reducer(state, action) {
   switch (action.type) {
-    case "OPEN_RESULT_DROP_DOWN": 
+    case "OPEN_STUDENT_DROP_DOWN": 
       return {
         ...state,
-        openResultDropDown: action.payload,
+        openStudentDropDown: action.payload,
         useMainUrl: action.useMain,
-        openRegDropDown: false,
-        openPrintDropDown: false,
-        openGpaDropDown: false,
-        openDocDropDown: false 
+        openLecDropDown: false,
+        openPortalDropDown: false,
+        openMasterDropDown: false 
       }
     
-    case "OPEN_REG_DROP_DOWN":
+    case "OPEN_LEC_DROP_DOWN":
       return {
         ...state,
-        openResultDropDown: false,
-        openRegDropDown: action.payload,
+        openStudentDropDown: false,
+        openLecDropDown: action.payload,
         useMainUrl: action.useMain,
-        openPrintDropDown: false,
-        openGpaDropDown: false,
-        openDocDropDown: false 
+        openPortalDropDown: false,
+        openMasterDropDown: false 
       }
 
-    case "OPEN_PRINT_DROP_DOWN":
+    case "OPEN_PORTAL_DROP_DOWN":
       return {
         ...state,
-        openResultDropDown: false,
-        openRegDropDown: false,
-        openPrintDropDown: action.payload,
+        openStudentDropDown: false,
+        openLecDropDown: false,
+        openPortalDropDown: action.payload,
         useMainUrl: action.useMain,
-        openGpaDropDown: false,
-        openDocDropDown: false 
+        openMasterDropDown: false 
       }
 
-    case "OPEN_GPA_DROP_DOWN":
+    case "OPEN_MASTER_DROP_DOWN":
       return {
         ...state,
-        openResultDropDown: false,
-        openRegDropDown: false,
-        openPrintDropDown: false,
-        useMainUrl: action.useMain,
-        openGpaDropDown: action.payload,
-        openDocDropDown: false 
-      }
-
-    case "OPEN_DOC_DROP_DOWN":
-      return {
-        ...state,
-        openResultDropDown: false,
-        openRegDropDown: false,
-        openPrintDropDown: false,
-        openGpaDropDown: false,
-        openDocDropDown: action.payload,
+        openStudentDropDown: false,
+        openLecDropDown: false,
+        openPortalDropDown: false,
+        openMasterDropDown: action.payload,
         useMainUrl: action.useMain, 
       }
 

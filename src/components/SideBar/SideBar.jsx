@@ -21,47 +21,46 @@ import logoutIcon from "../../assets/sidebarIcons/logout.svg"
 import plusIcon from "../../assets/sidebarIcons/plusIcon.svg"
 
 const initialState = {
-  openResultDropDown: false,
-  openRegDropDown: false,
-  openPrintDropDown: false,
-  openGpaDropDown: false,
-  openDocDropDown: false,
+  openStudentDropDown: false,
+  openLecDropDown: false,
+  openPortalDropDown: false,
+  openMasterDropDown: false,
   useMainUrl: true
 }
 
 const SideBar = (props) => {
   const [sideBarState, dispatch] = useReducer(reducer, initialState)
 
-  const toggleResultDropDown = () => {
+  const toggleStudentDropDown = () => {
     dispatch({
-      type: "OPEN_RESULT_DROP_DOWN",
-      payload: !sideBarState.openResultDropDown,
-      useMain: !sideBarState.openResultDropDown ? false : true
+      type: "OPEN_STUDENT_DROP_DOWN",
+      payload: !sideBarState.openStudentDropDown,
+      useMain: !sideBarState.openStudentDropDown ? false : true
     })
   }
 
   const toggleRegDropDown = () => {
     dispatch({
-      type: "OPEN_REG_DROP_DOWN",
-      payload: !sideBarState.openRegDropDown,
-      useMain: !sideBarState.openRegDropDown ? false : true
+      type: "OPEN_LEC_DROP_DOWN",
+      payload: !sideBarState.openLecDropDown,
+      useMain: !sideBarState.openLecDropDown ? false : true
     })
   }
 
   const togglePrintDropDown = () => {
     dispatch({
-      type: "OPEN_PRINT_DROP_DOWN",
-      payload: !sideBarState.openPrintDropDown,
-      useMain: !sideBarState.openPrintDropDown ? false : true
+      type: "OPEN_PORTAL_DROP_DOWN",
+      payload: !sideBarState.openPortalDropDown,
+      useMain: !sideBarState.openPortalDropDown ? false : true
     })
   }
 
 
   const toggleDocDropDown = () => {
     dispatch({
-      type: "OPEN_DOC_DROP_DOWN",
-      payload: !sideBarState.openDocDropDown,
-      useMain: !sideBarState.openDocDropDown ? false : true
+      type: "OPEN_MASTER_DROP_DOWN",
+      payload: !sideBarState.openMasterDropDown,
+      useMain: !sideBarState.openMasterDropDown ? false : true
     })
   }
 
@@ -89,6 +88,8 @@ const SideBar = (props) => {
     }
   }
 
+
+
   return (
     <div className={styles.container}>
       <div className={styles.containerTwo}>
@@ -101,7 +102,7 @@ const SideBar = (props) => {
         />
       </div>
 
-      <div className={styles.createAccountDiv}>
+      <div className={styles.createAccountDiv} onClick={() => handleUrlChange("create-account")}>
         <img
           alt=""
           src={plusIcon} 
@@ -121,21 +122,21 @@ const SideBar = (props) => {
         </li>
 
         <li 
-          onClick={toggleResultDropDown}
+          onClick={toggleStudentDropDown}
           className={styles.itemContainer}
         >
-          <div className={sideBarState.openResultDropDown ? styles.active : styles.inactive}>
+          <div className={sideBarState.openStudentDropDown ? styles.active : styles.inactive}>
             {
-              sideBarState.openResultDropDown ? <StudentIcon color={"#DF8A09"}/> : <StudentIcon color={"white"} />
+              sideBarState.openStudentDropDown ? <StudentIcon color={"#DF8A09"}/> : <StudentIcon color={"white"} />
             }
             <p>Student</p>
 
             <div className={styles.rightArrow}>
-              {sideBarState.openResultDropDown ? <RightArrow color={"#DF8A09"}/> : <RightArrow color={"white"} />}
+              {sideBarState.openStudentDropDown ? <RightArrow color={"#DF8A09"}/> : <RightArrow color={"white"} />}
             </div>
           </div>
 
-          <div className={sideBarState.openResultDropDown ? styles.test : styles.close}>
+          <div className={sideBarState.openStudentDropDown ? styles.test : styles.close}>
             <div className={styles.testInner}>
               <p 
                 onClick={(e) => stopPropagation(e)} 
@@ -157,18 +158,18 @@ const SideBar = (props) => {
           onClick={toggleRegDropDown}
           className={styles.itemContainer}
         >
-          <div className={sideBarState.openRegDropDown ? styles.active : styles.inactive}>
+          <div className={sideBarState.openLecDropDown ? styles.active : styles.inactive}>
             {
-              sideBarState.openRegDropDown ? <LecturerIcon color={"#DF8A09"}/> : <LecturerIcon color={"white"} />
+              sideBarState.openLecDropDown ? <LecturerIcon color={"#DF8A09"}/> : <LecturerIcon color={"white"} />
             }
             <p>Lecturer</p>
 
             <div className={styles.rightArrow}>
-              {sideBarState.openRegDropDown ? <RightArrow color={"#DF8A09"}/> : <RightArrow color={"white"} />}
+              {sideBarState.openLecDropDown ? <RightArrow color={"#DF8A09"}/> : <RightArrow color={"white"} />}
             </div>
           </div>
 
-          <div className={sideBarState.openRegDropDown ? styles.test : styles.close}>
+          <div className={sideBarState.openLecDropDown ? styles.test : styles.close}>
             <div className={styles.testInner}>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Selected course</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Course form</p>
@@ -180,17 +181,17 @@ const SideBar = (props) => {
           onClick={togglePrintDropDown}
           className={styles.itemContainer}
         >
-          <div className={sideBarState.openPrintDropDown ? styles.active : styles.inactive}>
+          <div className={sideBarState.openPortalDropDown ? styles.active : styles.inactive}>
             {
-              sideBarState.openPrintDropDown ? <AdminIcon color={"#DF8A09"}/> : <AdminIcon color={"white"} />
+              sideBarState.openPortalDropDown ? <AdminIcon color={"#DF8A09"}/> : <AdminIcon color={"white"} />
             }
             <p>Administrative Portal</p>
             <div className={styles.rightArrow}>
-              {sideBarState.openPrintDropDown ? <RightArrow color={"#DF8A09"}/> : <RightArrow color={"white"} />}
+              {sideBarState.openPortalDropDown ? <RightArrow color={"#DF8A09"}/> : <RightArrow color={"white"} />}
             </div>
           </div>
 
-          <div className={sideBarState.openPrintDropDown ? styles.test : styles.close}>
+          <div className={sideBarState.openPortalDropDown ? styles.test : styles.close}>
             <div className={styles.testInner}>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Current semester</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Previous semester</p>
@@ -202,17 +203,17 @@ const SideBar = (props) => {
           onClick={toggleDocDropDown}
           className={styles.itemContainer}
         >
-          <div className={sideBarState.openDocDropDown ? styles.active : styles.inactive}>
+          <div className={sideBarState.openMasterDropDown ? styles.active : styles.inactive}>
             {
-              sideBarState.openDocDropDown ? <DocumentIcon color={"#DF8A09"}/> : <DocumentIcon color={"white"} />
+              sideBarState.openMasterDropDown ? <DocumentIcon color={"#DF8A09"}/> : <DocumentIcon color={"white"} />
             }
             <p>Master Sheet</p>
             <div className={styles.rightArrow}>
-              {sideBarState.openDocDropDown ? <RightArrow color={"#DF8A09"}/> : <RightArrow color={"white"} />}
+              {sideBarState.openMasterDropDown ? <RightArrow color={"#DF8A09"}/> : <RightArrow color={"white"} />}
             </div>
           </div>
 
-          <div className={sideBarState.openDocDropDown ? styles.test : styles.close}>
+          <div className={sideBarState.openMasterDropDown ? styles.test : styles.close}>
             <div className={styles.testInner}>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Course document</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Upload</p>

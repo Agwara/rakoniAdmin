@@ -13,11 +13,11 @@ const ForgotPassword = () => {
   const startLogin = () => {
     history.push("/")
   }
-
+  
   return (
     <div className={styles.container}>
 
-      <p className={styles.loginText}>Log in here</p>
+      <p className={styles.loginText} onClick={startLogin}>Log in here</p>
       
       <div className={styles.formContainer}>
         <div className={styles.formHeader}>

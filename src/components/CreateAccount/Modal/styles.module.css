@@ -1,0 +1,66 @@
+.container {
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modalContent {
+  margin: 0 auto;
+  grid-column: 2/3;
+  width: 50%;
+  height: 400px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  justify-content: center;
+
+}
+
+.successText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 97%;
+  color: #219653;
+}
+
+.secondText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+
+  text-align: center;
+  color: #505050;
+}
+
+.btn {
+  width: 120px;
+  height: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 20px 40px;
+  }
+  .modalContent {
+    grid-column: 1/-1;
+    width: 80%;
+  }
+}
