@@ -3,8 +3,9 @@
   width: 100%;
 
   padding: 20px;
-}
 
-.container div {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 20px;
 }

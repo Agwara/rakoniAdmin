@@ -1,8 +1,9 @@
 import React from "react" 
 
 import Greeting from "../../components/Greeting/Greeting"
-import Information from "../../components/Information/Information"
-import QuickAccess from "../../components/QuickAccess/QuickAccess"
+import QuickInfo from "../../components/QuickInfo/QuickInfo"
+import LecturerQuickAccess from "../../components/QuickAccess/LectureQuickAccess/Index"
+import StudentQuickAccess from "../../components/QuickAccess/StudentQuickAccess/Index"
 import dashboardStyles from "./Dashboard.module.css"
 
 const Dashboard = (props) => {
@@ -10,9 +11,13 @@ const Dashboard = (props) => {
     <div className={dashboardStyles.container}>
       <Greeting />
 
-      <Information />
+      <QuickInfo />
+      
+      <StudentQuickAccess 
+        setStartToggle={props.setStartToggle} 
+      />
 
-      <QuickAccess 
+      <LecturerQuickAccess 
         setStartToggle={props.setStartToggle} 
       />
     </div>

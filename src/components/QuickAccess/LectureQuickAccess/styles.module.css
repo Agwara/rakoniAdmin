@@ -27,6 +27,7 @@
 .item {
   height: 140px;
   width: 180px;
+  padding: 10px;
 
   background-color: #f1f1f1;
   border-radius: 6px;
