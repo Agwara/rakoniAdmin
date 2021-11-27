@@ -1,5 +1,5 @@
 import React, {useReducer} from "react"
-import {useHistory} from "react-router-dom"
+import {useHistory, Link} from "react-router-dom"
 
 import reducer from "./sideBarReducer"
 
@@ -88,8 +88,6 @@ const SideBar = (props) => {
     }
   }
 
-
-
   return (
     <div className={styles.container}>
       <div className={styles.containerTwo}>
@@ -138,17 +136,23 @@ const SideBar = (props) => {
 
           <div className={sideBarState.openStudentDropDown ? styles.test : styles.close}>
             <div className={styles.testInner}>
-              <p 
-                onClick={(e) => stopPropagation(e)} 
-                className={styles.innerLinkText}
-              >
-                Result
+              <p onClick={(e) => stopPropagation(e, "student/activate-deactivate")} className={styles.innerLinkText}>
+                Activate / Deactivate
               </p>
-              <p 
-                onClick={(e) => stopPropagation(e)} 
-                className={styles.innerLinkText}
-              >
-                Oustanding
+              <p onClick={(e) => stopPropagation(e, "student/block-unblock")} className={styles.innerLinkText}>
+                Block / Unblock
+              </p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>
+                Password Reset
+              </p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>
+                Biodata Correction
+              </p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>
+                Retrospective Registration
+              </p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>
+                Late Registration
               </p>
             </div>
           </div>
@@ -171,8 +175,11 @@ const SideBar = (props) => {
 
           <div className={sideBarState.openLecDropDown ? styles.test : styles.close}>
             <div className={styles.testInner}>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Selected course</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Course form</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Lecturer List</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Activate/Deactivate</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Reset Upload Quota</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Biodata Correction</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Password Reset</p>
             </div>
           </div>
         </li>
@@ -191,10 +198,23 @@ const SideBar = (props) => {
             </div>
           </div>
 
-          <div className={sideBarState.openPortalDropDown ? styles.test : styles.close}>
+          <div className={sideBarState.openPortalDropDown ? styles.testGpa : styles.close}>
             <div className={styles.testInner}>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Current semester</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Previous semester</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Set Countdown</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Free Structure</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Hide/Show Result</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Activate Result Upload Page</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Public Anouncement</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Registration Statistics</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Upload Result Summary</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Set Current Semester</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Bulk SMS Broadcast</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Bulk Result Broadcast</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Upload Admitted Student CSV</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Add New Faculty</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Add New Department</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Add New Programme</p>
+              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Add New Course</p>
             </div>
           </div>
         </li>
@@ -213,7 +233,7 @@ const SideBar = (props) => {
             </div>
           </div>
 
-          <div className={sideBarState.openMasterDropDown ? styles.test : styles.close}>
+          <div className={sideBarState.openMasterDropDown ? styles.testMasterSheet : styles.close}>
             <div className={styles.testInner}>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Course document</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Upload</p>

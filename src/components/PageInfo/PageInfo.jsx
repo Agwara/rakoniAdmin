@@ -2,6 +2,13 @@ import React from "react"
 
 import styles from "./styles.module.css" 
 
+/* 
+  This component receives the following properties:
+
+  * infoText  ---> For page description
+  * sideImage  ---> For the side image
+
+*/
 const PageInfo = (props) => {
   return (
     <div className={styles.container}>
