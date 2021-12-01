@@ -142,10 +142,10 @@ const SideBar = (props) => {
               <p onClick={(e) => stopPropagation(e, "student/block-unblock")} className={styles.innerLinkText}>
                 Block / Unblock
               </p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>
+              <p onClick={(e) => stopPropagation(e, "student/reset-password")} className={styles.innerLinkText}>
                 Password Reset
               </p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>
+              <p onClick={(e) => stopPropagation(e, "student/bio-data-correction")} className={styles.innerLinkText}>
                 Biodata Correction
               </p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>

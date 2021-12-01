@@ -30,6 +30,12 @@ export default function reducer(state, action) {
         fetchState: "loading"
       }   
 
+    case "STOP_LOADING": 
+      return {
+        ...state,
+        fetchState: "loaded"
+      }  
+
      default: 
       return state; 
   }
