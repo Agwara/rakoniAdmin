@@ -26,9 +26,8 @@ const QuickAccess = (props) => {
       <h3 className={styles.title}>Student Quick Access</h3>
 
       <ul className={styles.containerTwo}>
-
         <li 
-          onClick={() => handlePageChange("")}
+          onClick={() => handlePageChange("/student/bio-data-correction")}
           onMouseLeave={() => handleHoverChange("")} 
           onMouseEnter={() => handleHoverChange("person")} 
           className={styles.item}
@@ -38,7 +37,7 @@ const QuickAccess = (props) => {
         </li>
 
         <li 
-          onClick={() => handlePageChange("")}
+          onClick={() => handlePageChange("/student/retrospective-reg")}
           onMouseLeave={() => handleHoverChange("")} 
           onMouseEnter={() => handleHoverChange("retroStudent")} 
           className={styles.item}
@@ -48,7 +47,7 @@ const QuickAccess = (props) => {
         </li>
 
         <li 
-          onClick={() => handlePageChange("")}
+          onClick={() => handlePageChange("/student/block-unblock")}
           onMouseLeave={() => handleHoverChange("")} 
           onMouseEnter={() => handleHoverChange("padLock")} 
           className={styles.item}
@@ -58,6 +57,7 @@ const QuickAccess = (props) => {
         </li>
 
         <li 
+          onClick={() => handlePageChange("/student/reset-password")}
           onMouseLeave={() => handleHoverChange("")} 
           onMouseEnter={() => handleHoverChange("resetPassword")} 
           className={styles.item}

@@ -148,10 +148,10 @@ const SideBar = (props) => {
               <p onClick={(e) => stopPropagation(e, "student/bio-data-correction")} className={styles.innerLinkText}>
                 Biodata Correction
               </p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>
+              <p onClick={(e) => stopPropagation(e, "student/retrospective-reg")} className={styles.innerLinkText}>
                 Retrospective Registration
               </p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>
+              <p onClick={(e) => stopPropagation(e, "student/late-registration")} className={styles.innerLinkText}>
                 Late Registration
               </p>
             </div>
@@ -175,7 +175,7 @@ const SideBar = (props) => {
 
           <div className={sideBarState.openLecDropDown ? styles.test : styles.close}>
             <div className={styles.testInner}>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Lecturer List</p>
+              <p onClick={(e) => stopPropagation(e, "lecturer/lecturer-list")} className={styles.innerLinkText}>Lecturer List</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Activate/Deactivate</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Reset Upload Quota</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Biodata Correction</p>

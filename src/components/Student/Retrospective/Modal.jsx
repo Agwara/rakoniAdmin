@@ -23,7 +23,7 @@ const Modal = () => {
 
         <p className={styles.successText}>Successful</p> 
 
-        <p className={styles.secondText}>Student new password has been<br/> successfully updated</p> 
+        <p className={styles.secondText}>Student registration has been<br/> successfully updated</p> 
 
         <div className={styles.btnContainer}>
           <button onClick={goToDashboard} className={styles.activeBtn}>Ok</button>

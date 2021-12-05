@@ -12,9 +12,21 @@ import styles from "./styles.module.css"
 const PageInfo = (props) => {
   return (
     <div className={styles.container}>
-      <div className={styles.textContainer}>
-        <h3 className={styles.headerText}>{props.infoText}</h3>
-      </div>
+
+
+      {
+        props.showRetro ? 
+        <div className={styles.textContainerOne}>
+          <h3 className={styles.headerTextOne}>Retrospective Registartion</h3>
+
+          <p className={styles.textTwo}>Upload course registration in CSV format. Only two fields are required</p>
+
+          <h5 className={styles.textThree}>Student ID and Course code</h5>
+        </div> :
+        <div className={styles.textContainer}>
+          <h3 className={styles.headerText}>{props.infoText}</h3>
+        </div>
+      }
 
       <img
         alt=""

@@ -24,7 +24,7 @@ const QuickAccess = (props) => {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>Student Quick Access</h3>
+      <h3 className={styles.title}>Lecturer Quick Access</h3>
 
       <ul className={styles.containerTwo}>
 

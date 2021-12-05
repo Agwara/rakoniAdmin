@@ -6,6 +6,7 @@ import ForgotPasswordPage from "../pages/ForgotPasswordPage/ForgotPasswordPage"
 import Login from "../pages/Login/Login"
 import ResetPasswordPage from "../pages/ResetPasswordPage/ResetPasswordPage"
 import CreateAccount from "../pages/CreatAccount/CreateAccount"
+import Lecturer from "../pages/Lecturer/Lecturer"
 import Student from "../pages/Student/Student"
 
 
@@ -27,6 +28,8 @@ const AppRouter = () => {
         <Route exact path="/login" component={Login} />
 
         <Route exact path="/reset-password/:token" component={ResetPasswordPage} />
+
+        <PrivateRoute path={`/lecturer`} component={Lecturer} />
 
         <PrivateRoute path={`/student`} component={Student} />
 
