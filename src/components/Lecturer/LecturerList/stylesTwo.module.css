@@ -8,14 +8,12 @@
 
   scrollbar-width: thin;
   scrollbar-color: #2d0353 #f1f1f1;
+
 }
 
 .testTwo {
   height: 600px;
   min-width: 1000px;
-
-  display: flex;
-  column-gap: 20px;
 }
 
 .container::-webkit-scrollbar {
@@ -34,28 +32,46 @@
   border-radius: 6px;
 }
 
-.red, .brown, .blue, .pink {
-  width: 120px;
-  height: 80px;
+.headerContainer {
+  height: 60px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr .6fr 0.8fr 1fr 0.8fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  background: #FAFAFA;
+
 }
 
-.red {
-  background-color: red;
-}
-.blue {
-  background-color: blue;
-}
-
-.pink {
-  background-color: pink;
+.lecturerItem {
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr .6fr 0.8fr 1fr 0.8fr 1fr;
+  column-gap: 10px;
+  align-items: center;
 }
 
-.brown {
-  background-color: brown;
+.paddingLeft {
+  padding-left: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+.headerText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 97%;
+  color: #505050;
+}
+
+.elementText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97%;
+  color: #787878;
+}
+
+/* @media screen and (max-width: 1000px) {
   .testTwo {
     min-width: 800px;
   }
-}
+} */
