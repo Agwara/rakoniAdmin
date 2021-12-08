@@ -19,7 +19,7 @@ const initialState = {
   fetchData: []
 }
 
-const ActivateDeactivate = () => {
+const ResetQuota = () => {
   const [studentID, setStudentID] = useState(IdFromServer[0])
 
   const [resultState, dispatch] = useReducer(reducer, initialState)
@@ -53,7 +53,7 @@ const ActivateDeactivate = () => {
 
   return (
     <div className={styles.container}>
-      <PageInfo infoText="Activate / Deactivate" sideImage={studentImage} />
+      <PageInfo infoText="Reset Upload Quota" sideImage={studentImage} />
 
       <SearchItem 
         data={IdFromServer} 
@@ -72,18 +72,18 @@ const ActivateDeactivate = () => {
           resultState={resultState} 
           btnColor="red"
           btnIcon=""
-          btnText="Deactivate"
+          btnText="Reset upload quota"
           setShowModal={setShowModal}
         /> 
         : <div></div> 
       }
 
-      { showModal ? <Modal setShowModal={setShowModal} btnText="Deactivate" /> : <div></div>}
+      { showModal ? <Modal setShowModal={setShowModal} btnText="Reset Quota" /> : <div></div>}
     </div>
   )
 }
 
-export default ActivateDeactivate
+export default ResetQuota
 
 const IdFromServer = [
   "STA/12/2021", "STA/09/2022", "MTH/12/2021", "ENG/09/2022", "PHY/09/2022", "CHM/12/2021", "BIO/09/2022"

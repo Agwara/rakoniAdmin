@@ -176,10 +176,10 @@ const SideBar = (props) => {
           <div className={sideBarState.openLecDropDown ? styles.test : styles.close}>
             <div className={styles.testInner}>
               <p onClick={(e) => stopPropagation(e, "lecturer/lecturer-list")} className={styles.innerLinkText}>Lecturer List</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Activate/Deactivate</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Reset Upload Quota</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Biodata Correction</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Password Reset</p>
+              <p onClick={(e) => stopPropagation(e, "lecturer/activate-deactivate")} className={styles.innerLinkText}>Activate/Deactivate</p>
+              <p onClick={(e) => stopPropagation(e, "lecturer/reset-quota")} className={styles.innerLinkText}>Reset Upload Quota</p>
+              <p onClick={(e) => stopPropagation(e, "lecturer/bio-data-correction")} className={styles.innerLinkText}>Biodata Correction</p>
+              <p onClick={(e) => stopPropagation(e, "lecturer/reset-password")} className={styles.innerLinkText}>Password Reset</p>
             </div>
           </div>
         </li>

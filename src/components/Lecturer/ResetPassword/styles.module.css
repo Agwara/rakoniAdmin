@@ -5,6 +5,43 @@
   padding: 20px;
 }
 
+.subHeadText {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 97%;
+
+  color: #2D0353;
+
+  text-align: center;
+}
+
+.formContainer {
+  width: 420px;
+  min-height: 450px;
+
+  background-color: #FAFAFA;
+  border-radius: 6px;
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 0px;
+}
+
+.formField {
+  width: 90%;
+  height: 65px;
+}
+
+.btn {
+  height: 50px;
+  width: 90%;
+}
+
 /* MODAL SECTION */
 .modalContainer {
   position: fixed;
@@ -63,7 +100,6 @@
 }
 
 .btnContainer {
-
   display: flex;
   justify-content: center;
   column-gap: 20px;
@@ -86,26 +122,6 @@
   cursor: pointer;
 }
 
-.nonActiveBtn {
-  background-color: #F0F0F0;
-  color: #505050;
-  width: 120px;
-  height: 100%;
-  border-radius: 6px;
-  outline: none;
-  border: none;
-
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-
-  transition: background-color .4s;
-}
-
-.nonActiveBtn:hover {
-  background-color: #c5c4c4;
-}
-
 @media screen and (max-width: 800px) {
   .modalContainer {
     padding: 20px 40px;
@@ -115,5 +131,12 @@
     width: 90%;
     padding: 0px 20px;
     height: 350px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .formContainer {
+    width: 80%;
   }
 }
