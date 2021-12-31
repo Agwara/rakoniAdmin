@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  column-gap: 45px;
+  row-gap: 20px;
+
+  margin-top: 50px;
+
+}
+
+.timerContainer {
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+
+  position: relative;
+}
+
+.timerColon {
+  height: 183px;
+
+  width: 20px;
+
+  position: absolute;
+
+  top: 40px;
+  left: 191px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+.colonDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #2D0353;
+}
+
+.timerTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 97%;
+  color: #787878;
+  height: 30px;
+}
+
+.timerbg {
+  width: 171px;
+  height: 183px;
+
+  background: #FAFAFA;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timertxt {
+  color: #2D0353;
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 1200px) {
+  .timerbg {
+    width: 130px;
+    height: 140px;
+
+  }
+
+  .timerColon {
+    height: 140px;
+    left: 150px;
+  }
+
+  .timertxt {
+    font-size: 70px;
+    font-weight: 600;
+  }
+
+  .timerTitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .timerbg {
+    width: 120px;
+    height: 130px;
+
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .timerbg {
+    width: 100px;
+    height: 110px;
+  }
+
+  .timertxt {
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .timerTitle {
+    font-size: 16px;
+  }
+}
+
+

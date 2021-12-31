@@ -78,7 +78,7 @@ const ResetQuota = () => {
         : <div></div> 
       }
 
-      { showModal ? <Modal setShowModal={setShowModal} btnText="Reset Quota" /> : <div></div>}
+      { showModal ? <Modal setShowModal={setShowModal} btnText="Reset Quota " /> : <div></div>}
     </div>
   )
 }

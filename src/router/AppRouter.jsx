@@ -8,6 +8,7 @@ import ResetPasswordPage from "../pages/ResetPasswordPage/ResetPasswordPage"
 import CreateAccount from "../pages/CreatAccount/CreateAccount"
 import Lecturer from "../pages/Lecturer/Lecturer"
 import Student from "../pages/Student/Student"
+import AdminPortal from "../pages/AdminPortal/AdminPortal"
 
 
 import Dashboard from "../pages/Dashboard/Dashboard"
@@ -20,6 +21,8 @@ const AppRouter = () => {
     <Router>
       <Switch>
         <PrivateRoute exact path="/" component={Dashboard} />
+
+        <PrivateRoute path={`/admin-portal`} component={AdminPortal} />
 
         <PrivateRoute exact path="/create-account" component={CreateAccount} />
 

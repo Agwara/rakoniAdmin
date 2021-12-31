@@ -200,8 +200,8 @@ const SideBar = (props) => {
 
           <div className={sideBarState.openPortalDropDown ? styles.testGpa : styles.close}>
             <div className={styles.testInner}>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Set Countdown</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Free Structure</p>
+              <p onClick={(e) => stopPropagation(e, "admin-portal/count-down")} className={styles.innerLinkText}>Set Countdown</p>
+              <p onClick={(e) => stopPropagation(e, "admin-portal/fee-structure")} className={styles.innerLinkText}>Fee Structure</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Hide/Show Result</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Activate Result Upload Page</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Public Anouncement</p>

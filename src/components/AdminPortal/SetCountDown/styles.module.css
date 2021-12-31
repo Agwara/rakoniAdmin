@@ -1,0 +1,321 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px;
+}
+
+.containerTwo {
+  margin-top: 20px;
+  background-color: #fafafa;
+
+  min-height: 90px;
+  width: 550px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.containerThree {
+  position: relative;
+}
+
+.dropDown {
+  min-height: 50px;
+}
+
+.btn {
+  background-color: #2D0353;
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #4a0486;
+}
+
+.dropDownTitle {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #505050;
+  }
+
+.dateInput {
+  margin-top: 10px;
+  height: 35px;
+
+  border: 1px #ccc solid;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+
+  cursor: pointer;
+  transition: all .4s;
+
+  
+  position: relative;
+}
+
+.dateInput:hover {
+  border: 1px rgb(58, 58, 58) solid;
+}
+
+.dateInputText {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #BDBDBD;
+}
+
+.calendar {
+  min-height: 280px;
+  width: 250px;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 80px;
+
+  z-index: 10;
+}
+
+.calendarContainer {
+  width: 100%;
+  height: 250px;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.reactCalendar {
+  width: 90% !important;
+  min-width: 220px;
+  background: white !important;
+  border-radius: 6px;
+  margin: unset;
+}
+
+.hoursDropDown {
+  position: absolute;
+  min-height: 250px;
+  width: 90px;
+  background-color: white;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  z-index: 10;
+
+}
+
+.hourValue {
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  transition: all .4s;cursor: pointer;
+}
+
+.hourValue:hover {
+  background-color: #2D0353;
+  color: white;
+}
+
+.hourValue:not(:last-child) {
+  border-bottom: 1px #ccc solid;
+}
+
+
+.errorMsg {
+  font-weight: 400;
+  font-size: 12px;
+  color: red;
+
+  margin-top: 20px;
+}
+.btnDelete {
+  border: none;
+  outline: none;
+
+  margin-top: 20px;
+  height: 40px;
+  width: 120px;
+
+  border-radius: 6px;
+  background-color: rgb(177, 2, 2);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition:  all .4s;
+}
+
+.btnDelete:hover {
+  background-color: red;
+}
+
+/* MODAL SECTION */
+.modalContainer {
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modalContent {
+  margin: 0 auto;
+  grid-column: 2/3;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  justify-content: center;
+
+}
+
+.successText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 97%;
+  color: #219653;
+}
+
+.secondText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 21px */
+
+  text-align: center;
+  color: #505050;
+
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.btnContainer {
+
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+
+  height: 40px;
+  width: 100%;
+}
+
+.activeBtn {
+  background-color: #2D0353;
+  color: white;
+  width: 120px;
+  height: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nonActiveBtn {
+  background-color: #F0F0F0;
+  color: #505050;
+  width: 120px;
+  height: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: background-color .4s;
+}
+
+.nonActiveBtn:hover {
+  background-color: #c5c4c4;
+}
+
+@media screen and (max-width: 800px) {
+  .modalContainer {
+    padding: 20px 40px;
+  }
+  .modalContent {
+    grid-column: 1/-1;
+    width: 90%;
+    padding: 0px 20px;
+    height: 350px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .containerTwo {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+  .reactCalendar {
+    width: 100% !important;
+  }
+
+  .calendar {
+    width: 200px;
+  }
+}
