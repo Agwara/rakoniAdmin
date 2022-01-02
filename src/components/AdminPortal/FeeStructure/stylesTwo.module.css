@@ -1,0 +1,71 @@
+.container {
+  margin-top: 20px;
+
+  min-height: 300px;
+  width: 100%;
+
+  overflow-x: scroll;
+
+  scrollbar-width: thin;
+  scrollbar-color: #2d0353 #f1f1f1;
+
+}
+
+.testTwo {
+  height: 300px;
+  min-width: 1000px;
+}
+
+.container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 10px;
+  height: 15px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #2d0353;
+  border-radius: 6px;
+}
+
+.headerContainer {
+  height: 60px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr  1fr;
+  column-gap: 10px;
+  align-items: center;
+  background: #FAFAFA;
+
+}
+
+.lecturerItem {
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr  1fr;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.paddingLeft {
+  padding-left: 20px;
+}
+
+.headerText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 97%;
+  color: #505050;
+}
+
+.elementText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97%;
+  color: #787878;
+}

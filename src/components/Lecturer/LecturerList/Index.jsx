@@ -5,8 +5,8 @@ import ListContent from "./ListContent"
 
 import lecturerList from "../../../assets/pageInfo/lecturer.svg"
 
-import deleteIcon from "../../../assets/lecturer/delete.svg"
-import editIcon from "../../../assets/lecturer/edit.svg"
+// import deleteIcon from "../../../assets/lecturer/delete.svg"
+// import editIcon from "../../../assets/lecturer/edit.svg"
 import searchIcon from "../../../assets/lecturer/search.svg"
 
 import styles from "./styles.module.css"
