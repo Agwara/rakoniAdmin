@@ -28,11 +28,14 @@ const PageInfo = (props) => {
         </div>
       }
 
-      <img
-        alt=""
-        src={props.sideImage} 
-        className={styles.sideImage}
-      />
+      {
+        props.sideImage && 
+        <img
+          alt=""
+          src={props.sideImage} 
+          className={styles.sideImage}
+        />
+      }
     </div>
   )
 }
