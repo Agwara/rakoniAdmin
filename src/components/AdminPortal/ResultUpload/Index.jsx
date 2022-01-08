@@ -2,8 +2,8 @@ import React, {useState, useEffect} from "react"
 
 import PageInfo from "../../PageInfo/PageInfo"
 import Loading from "../../Loading/Loading"
-import ToggleBtn from "./ToggleBtn"
 import Modal from "./Modal"
+import ToggleBtn from "./ToggleBtn"
 
 import styles from "./styles.module.css"
 
@@ -13,10 +13,9 @@ const Index = () => {
   const [sciSelected, setSciSelected] = useState(false)
   const [envSelected, setEnvSelected] = useState(false)
   const [agrSelected, setAgrSelected] = useState(false)
-
   const [showModal, setShowModal] = useState(false)
   const [loading, setLoading] = useState(false)
-
+  
   const startUpload = () => {
     setLoading(true)
 
@@ -50,13 +49,13 @@ const Index = () => {
 
   return (
     <div className={styles.container}>
-      <PageInfo infoText="Hide / Show Student Result" />
+      <PageInfo infoText="Hide / Show Lecturer  Result upload visibility" />
 
       <div style={{marginBottom: "20px"}}></div>
 
       <div className={styles.containerTwo}>
         <div className={styles.innerContainer}>
-          <p className={styles.innerText}>Enable all uploads Visibility</p>
+          <p className={styles.innerText}>Show all faculty results</p>
 
           <ToggleBtn
             selected={allSelected}

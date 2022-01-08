@@ -203,8 +203,8 @@ const SideBar = (props) => {
               <p onClick={(e) => stopPropagation(e, "admin-portal/count-down")} className={styles.innerLinkText}>Set Countdown</p>
               <p onClick={(e) => stopPropagation(e, "admin-portal/fee-structure")} className={styles.innerLinkText}>Fee Structure</p>
               <p onClick={(e) => stopPropagation(e, "admin-portal/result")} className={styles.innerLinkText}>Hide/Show Result</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Activate Result Upload Page</p>
-              <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Public Anouncement</p>
+              <p onClick={(e) => stopPropagation(e, "admin-portal/result-upload")} className={styles.innerLinkText}>Activate Result Upload Page</p>
+              <p onClick={(e) => stopPropagation(e, "admin-portal/announcement")} className={styles.innerLinkText}>Public Anouncement</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Registration Statistics</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Upload Result Summary</p>
               <p onClick={(e) => stopPropagation(e)} className={styles.innerLinkText}>Set Current Semester</p>
