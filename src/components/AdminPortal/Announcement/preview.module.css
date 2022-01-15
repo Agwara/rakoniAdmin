@@ -1,0 +1,125 @@
+.container {
+  width: 400px;
+  min-height: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.headerText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 97%;
+  color: #2D0353;
+}
+
+.containerTwo {
+  width: 100%;
+  background: #FAFAFA;
+  border-radius: 6px;
+  height: 450px;
+
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.sendTo {
+  width: 90%;
+  height: 60px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.textOne {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 97%;
+
+  color: #2D0353;
+}
+
+.textTwo {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #787878;
+}
+
+.textMsg {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #787878;
+
+  height: 200px;
+  overflow-y: scroll;
+}
+
+
+.msgBody {
+  width: 90%;
+  max-height: 200px;
+
+  border-bottom: 0.5px solid #787878;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.actionBtns {
+  height: 60px;
+  width: 90%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.editBtn {
+  background: #FFFFFF;
+
+  border: 0.5px solid #787878;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  color: #787878;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.sendBtn {
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: #2D0353;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 16px;
+
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}

@@ -6,6 +6,7 @@ import FeeStructure from "../../components/AdminPortal/FeeStructure/Index"
 import HideShowResult from "../../components/AdminPortal/HideShowResult/Index"
 import Announcement from "../../components/AdminPortal/Announcement/Announcement"
 import ResultUpload from "../../components/AdminPortal/ResultUpload/Index"
+import RegStatistics from "../../components/AdminPortal/RegStatistics/Index"
 
 
 const AdminPortal = () => (
@@ -15,6 +16,7 @@ const AdminPortal = () => (
     <Route path="/admin-portal/fee-structure" component={FeeStructure} />
     <Route path="/admin-portal/result" component={HideShowResult} />
     <Route path="/admin-portal/result-upload" component={ResultUpload} />
+    <Route path="/admin-portal/registration-statistics" component={RegStatistics} />
   </>
 )
 

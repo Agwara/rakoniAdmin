@@ -1,0 +1,95 @@
+.container {
+  width: 400px;
+  min-height: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.headerText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 97%;
+  color: #2D0353;
+  text-align: center;
+}
+
+.containerTwo {
+  width: 100%;
+  background: #FAFAFA;
+  border-radius: 6px;
+  height: 400px;
+
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dropDown {
+  width: 90%;
+  height: 70px;
+}
+
+
+.inputcContainer {
+  width: 90%;
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 5px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* grey-6 */
+
+  color: #505050;
+}
+
+.input {
+  height: 150px;
+  border-radius: 6px;
+  outline: none;
+  padding: 10px;
+
+
+  font-size: 18px;
+  font-weight: 500;
+  
+  color: #505050;
+}
+
+.btn {
+  width: 90%;
+  height: 45px;
+
+  background: #2D0353;
+
+  border: 0.5px solid #787878;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
